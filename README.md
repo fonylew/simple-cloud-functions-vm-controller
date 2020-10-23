@@ -1,7 +1,11 @@
 # simple-cloud-functions-vm-controller
 
+# Prerequisite
+In order to use Compute Engine API, please make sure that Compute Engine API is enabled:
+https://console.cloud.google.com/apis/api/compute.googleapis.com/overview?project=[PROJECT_ID]
+
 # Steps
-1. 
+1. Create an Compute Engine instance that would like to start / stop.
 2. Create a Pub/Sub topic. When deploy Cloud Functions via Console (web UI), there is a button to create a topic.
 3. Deploy Cloud Function. (alternatively: use `make deploy` as a prompt deploy command)
 4. Set Cloud Scheduler.
@@ -21,3 +25,4 @@ Enter topic name   : # A name of Cloud Pub/Sub topic for deploying pub/sub trigg
 
 # Reference
 - Google Cloud Functions example: https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/functions/helloworld/main.py
+- Google Cloud Compute Engine API example: https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/compute/api/create_instance.py
