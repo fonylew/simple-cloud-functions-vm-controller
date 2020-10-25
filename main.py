@@ -40,9 +40,3 @@ def stop_vm(event, context):
     else:
         print("The .env.yaml is not found.")
 
-
-if __name__ == '__main__':
-    if Config.project is not None:
-        print("Test reading .env.yaml: project = ", Config.project)
-    else:
-        print("The .env.yaml is not found.")
