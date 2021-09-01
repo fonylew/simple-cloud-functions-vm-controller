@@ -26,7 +26,7 @@ def start_vm(event, context):
 
 
 def stop_vm(event, context):
-    compute = googleapiclient.discovery.build('compute', 'v1')
+    compute = googleapiclient.discovery.build('compute', 'v1', cache_discovery=False)
     try:
         name = (
             base64.b64decode(event["data"]).decode("utf-8")
